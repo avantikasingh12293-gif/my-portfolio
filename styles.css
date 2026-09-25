@@ -422,8 +422,9 @@ button, input, textarea, select {
   flex-direction: column;
   background-color: var(--bg-card);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 20px 24px;
-  gap: 16px;
+  padding: 10px 16px;
+  gap: 8px;
+  box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.08);
 }
 
 .mobile-nav-drawer.open {
@@ -433,30 +434,47 @@ button, input, textarea, select {
 .mobile-nav-links {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 2px;
 }
 
 .mobile-nav-link {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-primary);
-  padding: 8px 0;
-  border-bottom: 1px solid var(--border-subtle);
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  transition: color var(--transition-fast);
+}
+
+.mobile-nav-link:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav-link:hover {
+  color: var(--primary);
 }
 
 .mobile-social-bar {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 6px;
+  margin-top: 4px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .mobile-social-link {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.9rem;
+  gap: 8px;
+  font-size: 0.8rem;
   color: var(--text-secondary);
+  padding: 2px 0;
+}
+
+.mobile-social-link svg {
+  width: 15px;
+  height: 15px;
 }
 
 .mobile-social-link[href*="linkedin"] svg {
@@ -1785,60 +1803,98 @@ button, input, textarea, select {
     display: none;
   }
 
+  /* Compact Section Global Padding */
+  .section {
+    padding: 36px 0;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-header {
+    margin: 0 auto 24px auto;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+    margin-bottom: 6px;
+  }
+
+  .section-subtitle {
+    font-size: 0.885rem;
+    line-height: 1.45;
+  }
+
+  .badge-pill {
+    padding: 3px 10px;
+    font-size: 0.725rem;
+    margin-bottom: 8px;
+  }
+
   .nav-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 16px 8px 16px;
-    gap: 8px;
+    padding: 12px 16px;
+    gap: 12px;
   }
 
   .brand-logo {
     font-size: 1.15rem;
   }
 
-  .mobile-toggle-btn {
-    display: flex;
-    order: 2;
+  .logo-badge {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
   }
 
-  /* All Header Icons and CTA in bottom line on mobile */
+  /* Hide social icons from header on mobile */
+  .nav-right-actions .social-icon-btn {
+    display: none !important;
+  }
+
+  /* Single top line for Let's Talk button & Menu Bar */
   .nav-right-actions {
-    order: 3;
-    width: 100%;
+    order: unset;
+    width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding-top: 8px;
-    border-top: 1px solid var(--border-subtle);
-    margin-top: 2px;
-  }
-
-  .nav-right-actions .social-icon-btn {
-    flex: 1;
-    height: 38px;
-    border-radius: var(--radius-sm);
+    gap: 10px;
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
   }
 
   .nav-right-actions .nav-cta-btn {
-    flex: 1.6;
-    height: 38px;
-    padding: 0 12px;
+    display: inline-flex;
+    height: 34px;
+    padding: 0 14px;
     font-size: 0.85rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+  }
+
+  .mobile-toggle-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4px;
+    order: unset;
   }
 
   /* Compact Left-Aligned Hero Section */
   .hero-section {
-    padding: 20px 0 35px 0;
+    padding: 16px 0 28px 0;
   }
 
   .hero-container {
-    gap: 28px;
+    gap: 24px;
   }
 
   .hero-content {
@@ -1849,29 +1905,29 @@ button, input, textarea, select {
     align-self: flex-start;
     margin-left: 0;
     margin-right: auto;
-    margin-bottom: 12px;
-    font-size: 0.775rem;
-    padding: 5px 12px;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+    padding: 4px 10px;
   }
 
   .hero-title {
-    font-size: 2.35rem;
+    font-size: 2.15rem;
     text-align: left;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     line-height: 1.15;
   }
 
   .hero-intro {
-    font-size: 1.05rem;
+    font-size: 1rem;
     text-align: left;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .hero-description {
-    font-size: 0.925rem;
+    font-size: 0.9rem;
     text-align: left;
-    line-height: 1.55;
-    margin-bottom: 18px;
+    line-height: 1.5;
+    margin-bottom: 16px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1880,68 +1936,200 @@ button, input, textarea, select {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 8px;
+    margin-bottom: 16px;
     justify-content: flex-start;
   }
 
   .hero-actions .btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 9px 18px;
+    font-size: 0.875rem;
   }
 
   .hero-stats {
-    padding-top: 14px;
-    gap: 18px;
+    padding-top: 12px;
+    gap: 16px;
     justify-content: flex-start;
     margin-left: 0;
     margin-right: 0;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .stat-number {
+    font-size: 1.5rem;
   }
 
+  .profile-photo {
+    height: 320px;
+  }
+
+  /* Tech Stack Cards */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .skill-card {
+    padding: 18px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .skill-card-icon {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 12px;
+  }
+
+  .skill-card-title {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+
+  /* How I Work Section */
   .work-models-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+
+  .work-model-card {
+    gap: 12px;
+  }
+
+  .trust-banner-card {
+    padding: 14px 16px;
+  }
+
+  /* Projects Section */
+  .project-filters {
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.775rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-card {
+    padding: 18px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+  }
+
+  .project-bullet-points {
+    margin-bottom: 14px;
+    gap: 6px;
+  }
+
+  /* Experience & Education */
+  .experience-education-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .timeline-column {
+    gap: 14px;
+  }
+
+  .timeline-card {
+    padding: 18px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .timeline-role {
+    font-size: 1.05rem;
+  }
+
+  /* CTA Banner Section */
+  .cta-banner-section {
+    padding: 20px 0 28px 0;
+  }
+
+  .cta-card {
+    padding: 28px 16px;
+    border-radius: var(--radius-lg);
+  }
+
+  .hiring-status-pill {
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .cta-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.45;
+    margin-bottom: 18px;
+  }
+
+  .cta-buttons {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .copy-pill-btn {
+    padding: 5px 10px;
+    font-size: 0.775rem;
+  }
+
+  /* Footer Section */
+  .footer-section {
+    padding: 32px 0 20px 0;
   }
 
   .footer-top {
     grid-template-columns: 1fr;
+    gap: 22px;
+    padding-bottom: 22px;
   }
 
-  .cta-card {
-    padding: 40px 20px;
+  .footer-col-title {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
   }
 
-  .cta-title {
-    font-size: 1.85rem;
+  .footer-bottom {
+    padding-top: 16px;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
+  .section {
+    padding: 28px 0;
+  }
+
   .hero-section {
-    padding: 16px 0 28px 0;
+    padding: 12px 0 22px 0;
   }
 
   .hero-title {
-    font-size: 2.05rem;
+    font-size: 1.95rem;
   }
 
   .hero-stats {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 14px 22px;
+    gap: 12px 18px;
     align-items: flex-start;
   }
 
   .stat-divider {
     display: block;
-    height: 28px;
+    height: 24px;
   }
 
   .hero-actions {
@@ -1963,6 +2151,6 @@ button, input, textarea, select {
   }
 
   .profile-photo {
-    height: 380px;
+    height: 300px;
   }
 }
