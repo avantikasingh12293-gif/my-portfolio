@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Avantika Singh - Full Stack Developer specializing in Next.js, React.js, Python (Django), and responsive modern UI/UX web development." />
+  <meta name="keywords"
+    content="Avantika Singh, Full Stack Developer, React.js, Next.js, Python, Django, Web Developer Portfolio, Frontend Developer, Noida" />
+  <meta name="author" content="Avantika Singh" />
+  <title>Avantika Singh | Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#about" class="brand-logo" id="brand-logo">
+        <div class="logo-badge">AS</div>
+        <span class="logo-name">Avantika</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Tech Stack</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#how-i-work" class="nav-link">How I Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action & Social Icons -->
+      <div class="nav-right-actions">
+        <a href="https://linkedin.com/in/avantika-singh-b9a93318b" target="_blank" rel="noopener noreferrer"
+          class="social-icon-btn linkedin-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:avantika12294@gmail.com" class="social-icon-btn" title="Send Email" aria-label="Email">
+          <i data-lucide="mail"></i>
+        </a>
+        <a href="tel:+917905399232" class="social-icon-btn" title="Call Avantika" aria-label="Phone">
+          <i data-lucide="phone"></i>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta-btn">Let's Talk</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu" id="menuOpenIcon"></i>
+          <i data-lucide="x" id="menuCloseIcon" class="hidden"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Tech Stack</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#how-i-work" class="mobile-nav-link">How I Work</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+      <div class="mobile-social-bar">
+        <a href="https://linkedin.com/in/avantika-singh-b9a93318b" target="_blank" rel="noopener noreferrer"
+          class="mobile-social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="mailto:avantika12294@gmail.com" class="mobile-social-link">
+          <i data-lucide="mail"></i> Email
+        </a>
+        <a href="tel:+917905399232" class="mobile-social-link">
+          <i data-lucide="phone"></i> +91-7905399232
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / ABOUT SECTION -->
+    <section class="hero-section" id="about">
+      <div class="container hero-container">
+        <!-- Hero Text Left Column -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span> Available for New Opportunities & Freelance
+          </div>
+          <h1 class="hero-title">
+            Full Stack<br />
+            Developer
+          </h1>
+          <p class="hero-intro">
+            Hi, I'm <strong class="highlight-name">Avantika Singh</strong>
+          </p>
+          <p class="hero-description">
+            Dynamic Full-Stack Developer with proven expertise at <strong>CSG Technosol Private Limited</strong>,
+            specializing in responsive design and REST API integration. Enhanced website performance and user experience
+            through effective collaboration and code reviews. Proficient in HTML, CSS, JavaScript,ReactJs and Next, with
+            strong client communication skills to meet project goals efficiently.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" id="heroGetInTouch">
+              Get In Touch <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#projects" class="btn btn-outline" id="heroViewProjects">
+              View Projects
+            </a>
+          </div>
+
+          <!-- Stats Strip -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">25+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image Right Column -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-image-container">
+              <img src="assets/profile.png" alt="Avantika Singh - Full Stack Developer" class="profile-photo"
+                id="profilePhoto" />
+              <div class="photo-overlay-badge">
+                <div class="badge-icon"><i data-lucide="sparkles"></i></div>
+                <div class="badge-text">
+                  <span class="badge-title">Full Stack Specialist</span>
+                  <span class="badge-sub">React • Next.js • Django</span>
+                </div>
+              </div>
+            </div>
+            <!-- Decorative blur backdrop -->
+            <div class="visual-glow-backdrop"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK EXPERTISE SECTION -->
+    <section class="section tech-stack-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Tech Stack Expertise</h2>
+          <p class="section-subtitle">Comprehensive experience across modern web technologies, frameworks, and
+            architecture tools.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Frontend -->
+          <div class="skill-card">
+            <div class="skill-card-icon frontend-icon">
+              <i data-lucide="layout"></i>
+            </div>
+            <h3 class="skill-card-title">Frontend</h3>
+            <ul class="skill-list">
+              <li><span class="bullet-dot"></span> React.js & Next.js</li>
+              <li><span class="bullet-dot"></span> TypeScript & JavaScript (ES6+)</li>
+              <li><span class="bullet-dot"></span> Tailwind CSS & Bootstrap 5</li>
+              <li><span class="bullet-dot"></span> HTML5 & Modern CSS3</li>
+              <li><span class="bullet-dot"></span> User Interface & Mobile Design</li>
+              <li><span class="bullet-dot"></span> Responsive UI/UX Architecture</li>
+              <li><span class="bullet-dot"></span> Performance & SEO Optimization</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Backend & Architecture -->
+          <div class="skill-card">
+            <div class="skill-card-icon backend-icon">
+              <i data-lucide="server"></i>
+            </div>
+            <h3 class="skill-card-title">Backend & Architecture</h3>
+            <ul class="skill-list">
+              <li><span class="bullet-dot"></span> Python (Django Web Framework)</li>
+              <li><span class="bullet-dot"></span> RESTful APIs Integration</li>
+              <li><span class="bullet-dot"></span> Dynamic Backend Features</li>
+              <li><span class="bullet-dot"></span> Server Optimization & Performance</li>
+              <li><span class="bullet-dot"></span> RESTful Endpoints Design</li>
+              <li><span class="bullet-dot"></span> Data Validation & API Security</li>
+              <li><span class="bullet-dot"></span> Cross-browser Compatibility</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Database & Tools -->
+          <div class="skill-card">
+            <div class="skill-card-icon database-icon">
+              <i data-lucide="database"></i>
+            </div>
+            <h3 class="skill-card-title">Development & Tools</h3>
+            <ul class="skill-list">
+              <li><span class="bullet-dot"></span> Git Version Control & GitHub</li>
+              <li><span class="bullet-dot"></span> Performance Debugging & Profiling</li>
+              <li><span class="bullet-dot"></span> Code Reviewing & Best Practices</li>
+              <li><span class="bullet-dot"></span> Cross-Browser Testing & Debugging</li>
+              <li><span class="bullet-dot"></span> Modular Component Libraries</li>
+              <li><span class="bullet-dot"></span> Database Integration with Django</li>
+              <li><span class="bullet-dot"></span> Fast Page Load Optimization</li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Methodologies & Collaboration -->
+          <div class="skill-card">
+            <div class="skill-card-icon cloud-icon">
+              <i data-lucide="rocket"></i>
+            </div>
+            <h3 class="skill-card-title">Collaboration & Delivery</h3>
+            <ul class="skill-list">
+              <li><span class="bullet-dot"></span> Team Collaboration & Agile Flow</li>
+              <li><span class="bullet-dot"></span> Client Communication & Expectations</li>
+              <li><span class="bullet-dot"></span> Requirement Analysis & Scoping</li>
+              <li><span class="bullet-dot"></span> Resource Allocation for Goals</li>
+              <li><span class="bullet-dot"></span> Designer & Backend Synergy</li>
+              <li><span class="bullet-dot"></span> End-to-End Product Lifecycle</li>
+              <li><span class="bullet-dot"></span> Production Quality Assurance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW I WORK SECTION (Exact Layout from reference image) -->
+    <section class="section how-i-work-section" id="how-i-work">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">How I Work</h2>
+          <p class="section-subtitle">Flexible engagement models tailored to your project needs and long-term digital
+            growth.</p>
+        </div>
+
+        <div class="work-models-grid">
+          <!-- Item 1 -->
+          <div class="work-model-card">
+            <div class="work-model-icon yellow-accent">
+              <i data-lucide="handshake"></i>
+            </div>
+            <div class="work-model-content">
+              <h3 class="work-model-title">Full-time Remote &amp; Partnership Support</h3>
+              <p class="work-model-desc">Work as an integrated member of your team with consistent communication,
+                proactive ownership, and trustworthy delivery.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="work-model-card">
+            <div class="work-model-icon orange-accent">
+              <i data-lucide="zap"></i>
+            </div>
+            <div class="work-model-content">
+              <h3 class="work-model-title">Short-Term Collaborations</h3>
+              <p class="work-model-desc">Quick fixes, performance improvements, feature updates, and bug resolutions
+                delivered reliably and on time.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="work-model-card">
+            <div class="work-model-icon blue-accent">
+              <i data-lucide="refresh-cw"></i>
+            </div>
+            <div class="work-model-content">
+              <h3 class="work-model-title">Ongoing Product Development</h3>
+              <p class="work-model-desc">Long term development support focused on continuous enhancements, scalability,
+                and a strong relationship built on reliability.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="work-model-card">
+            <div class="work-model-icon amber-accent">
+              <i data-lucide="lightbulb"></i>
+            </div>
+            <div class="work-model-content">
+              <h3 class="work-model-title">Strategic Technical Consultation</h3>
+              <p class="work-model-desc">Expert advice on architecture, performance, user experience, responsive
+                frameworks, and scalability.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Centered Trust Card -->
+        <div class="trust-banner-card">
+          <div class="trust-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <div class="trust-content">
+            <h3 class="trust-title">Commitment to Trust &amp; Transparency</h3>
+            <p class="trust-desc">Clear pricing, honest communication, and responsibility at every step, ensuring a
+              reliable partnership you can grow with.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-pill">Portfolio Showcase</div>
+          <h2 class="section-title">Featured Key Projects</h2>
+          <p class="section-subtitle">Real-world web applications and platforms engineered with performance,
+            scalability, and modern UI.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="react-next">React & Next.js</button>
+          <button class="filter-btn" data-filter="django">Python / Django</button>
+          <button class="filter-btn" data-filter="responsive">Responsive UI</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: printorbuy.com -->
+          <article class="project-card" data-category="django responsive">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag tag-django">Python / Django</span>
+                <span class="project-tag tag-bootstrap">Bootstrap 5</span>
+              </div>
+              <a href="https://www.printorbuy.com" target="_blank" rel="noopener noreferrer"
+                class="project-external-link" title="Visit Live Site">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://www.printorbuy.com" target="_blank" rel="noopener noreferrer">www.printorbuy.com</a>
+            </h3>
+            <p class="project-domain-badge">
+              <i data-lucide="globe"></i> Printing & Packaging Marketplace
+            </p>
+            <p class="project-summary">
+              Developed the complete responsive user interface for a high-traffic printing and packaging marketplace.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Built modern, mobile-friendly web pages using HTML5, CSS3, and Bootstrap.</li>
+              <li>Integrated REST APIs with the Django backend to display dynamic content.</li>
+              <li>Collaborated with backend team for seamless data exchange and fast server responses.</li>
+              <li>Optimized layouts for cross-browser compatibility and responsive performance.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Django</span>
+              <span class="tech-chip">HTML5</span>
+              <span class="tech-chip">CSS3</span>
+              <span class="tech-chip">Bootstrap</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Project 2: finsol.group -->
+          <article class="project-card" data-category="react-next responsive">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag tag-next">Next.js</span>
+                <span class="project-tag tag-react">React.js</span>
+              </div>
+              <a href="https://www.finsol.group" target="_blank" rel="noopener noreferrer" class="project-external-link"
+                title="Visit Live Site">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://www.finsol.group" target="_blank" rel="noopener noreferrer">www.finsol.group</a>
+            </h3>
+            <p class="project-domain-badge">
+              <i data-lucide="globe"></i> Corporate Financial Solutions
+            </p>
+            <p class="project-summary">
+              Architected a responsive, high-performance web platform utilizing modern React.js and Next.js features.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Developed a complete responsive corporate website using React.js and Next.js.</li>
+              <li>Created reusable components and optimized overall application performance.</li>
+              <li>Implemented modern UI/UX with fluid layouts seamlessly adapting across all devices.</li>
+              <li>Improved page speed and user experience using Next.js optimization capabilities.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-chip">Next.js</span>
+              <span class="tech-chip">React.js</span>
+              <span class="tech-chip">HTML5</span>
+              <span class="tech-chip">CSS3</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Project 3: indiapayouts.com -->
+          <article class="project-card" data-category="react-next responsive">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag tag-next">Next.js</span>
+                <span class="project-tag tag-react">React.js</span>
+              </div>
+              <a href="https://www.indiapayouts.com" target="_blank" rel="noopener noreferrer"
+                class="project-external-link" title="Visit Live Site">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://www.indiapayouts.com" target="_blank" rel="noopener noreferrer">www.indiapayouts.com</a>
+            </h3>
+            <p class="project-domain-badge">
+              <i data-lucide="globe"></i> Fintech & Payout Infrastructure
+            </p>
+            <p class="project-summary">
+              Developed high-security, responsive web pages for financial payout operations and customer dashboard
+              flows.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Developed responsive web pages using React.js and Next.js.</li>
+              <li>Built reusable UI components for scalable, future-proof frontend architecture.</li>
+              <li>Implemented responsive, high-performance interfaces for desktop and mobile users.</li>
+              <li>Collaborated with the development team to deliver a frictionless user experience.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-chip">React.js</span>
+              <span class="tech-chip">Next.js</span>
+              <span class="tech-chip">HTML5</span>
+              <span class="tech-chip">CSS3</span>
+              <span class="tech-chip">REST APIs</span>
+            </div>
+          </article>
+
+          <!-- Project 4: oneworldnetwork.co -->
+          <article class="project-card" data-category="react-next django">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag tag-react">React.js</span>
+                <span class="project-tag tag-django">Python API</span>
+              </div>
+              <a href="https://www.oneworldnetwork.co" target="_blank" rel="noopener noreferrer"
+                class="project-external-link" title="Visit Live Site">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://www.oneworldnetwork.co" target="_blank"
+                rel="noopener noreferrer">www.oneworldnetwork.co</a>
+            </h3>
+            <p class="project-domain-badge">
+              <i data-lucide="globe"></i> Enterprise Network Platform
+            </p>
+            <p class="project-summary">
+              Dynamic React frontend integrating Python-based REST APIs for real-time data rendering and cross-platform
+              UX.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Developed responsive frontend interfaces using React.js, HTML5, CSS3, and Bootstrap.</li>
+              <li>Integrated Python-based REST APIs for dynamic data rendering.</li>
+              <li>Built reusable React components for scalable and maintainable code.</li>
+              <li>Delivered responsive layouts optimized for desktop, tablet, and mobile devices.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-chip">React.js</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">REST API</span>
+              <span class="tech-chip">Bootstrap</span>
+              <span class="tech-chip">CSS3</span>
+            </div>
+          </article>
+
+          <!-- Project 5: navkaardryfruits.com -->
+          <article class="project-card" data-category="responsive">
+            <div class="project-header">
+              <div class="project-meta">
+                <span class="project-tag tag-bootstrap">Bootstrap UI</span>
+                <span class="project-tag tag-frontend">Frontend UI</span>
+              </div>
+              <a href="https://www.navkaardryfruits.com" target="_blank" rel="noopener noreferrer"
+                class="project-external-link" title="Visit Live Site">
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+            <h3 class="project-title">
+              <a href="https://www.navkaardryfruits.com" target="_blank"
+                rel="noopener noreferrer">www.navkaardryfruits.com</a>
+            </h3>
+            <p class="project-domain-badge">
+              <i data-lucide="globe"></i> E-Commerce & FMCG Brand
+            </p>
+            <p class="project-summary">
+              Engineered the full frontend user experience from scratch, emphasizing product catalog cleanliness and
+              mobile speed.
+            </p>
+            <ul class="project-bullet-points">
+              <li>Developed the complete responsive frontend UI from scratch.</li>
+              <li>Designed clean, user-friendly, and mobile-responsive web pages.</li>
+              <li>Ensured cross-browser compatibility and optimized website performance.</li>
+              <li>Implemented modern UI components using Bootstrap and custom CSS.</li>
+            </ul>
+            <div class="project-tech-stack">
+              <span class="tech-chip">HTML5</span>
+              <span class="tech-chip">CSS3</span>
+              <span class="tech-chip">Bootstrap</span>
+              <span class="tech-chip">JavaScript</span>
+              <span class="tech-chip">UI/UX</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION TIMELINE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="badge-pill">Background</div>
+          <h2 class="section-title">Work Experience &amp; Education</h2>
+          <p class="section-subtitle">Proven track record in software engineering, frontend architecture, and academic
+            excellence.</p>
+        </div>
+
+        <div class="experience-education-grid">
+
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <i data-lucide="briefcase"></i>
+              <h3>Professional Experience</h3>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-period-badge">01/2022 — 02/2026 (4+ Years)</div>
+              <h4 class="timeline-role">Full-Stack Developer</h4>
+              <div class="timeline-company">
+                <i data-lucide="building-2"></i> CSG Technosol Private Limited
+              </div>
+              <p class="timeline-desc">
+                Leading full-stack frontend and backend development initiatives, crafting high-performance user
+                interfaces, integrating robust RESTful APIs, and collaborating with cross-functional engineering teams.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Built responsive user interfaces using HTML, CSS, JavaScript, Angular, Next.js, and React
+                  components.</li>
+                <li>Integrated RESTful APIs to enhance frontend-backend communication efficiency.</li>
+                <li>Developed backend features using Django and optimized server responses.</li>
+                <li>Optimized website performance and reduced load times by implementing best practices.</li>
+                <li>Collaborated with designers and backend engineers; actively participated in code reviews.</li>
+                <li>Analyzed project requirements to clarify customer expectations and resource allocation for goal
+                  achievement.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education & Language Column -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <i data-lucide="graduation-cap"></i>
+              <h3>Education &amp; Background</h3>
+            </div>
+
+            <!-- Degree 1 -->
+            <div class="timeline-card edu-card">
+              <div class="timeline-period-badge">Graduated 01/2019</div>
+              <h4 class="timeline-role">Bachelor of Science in Computer Science</h4>
+              <div class="timeline-company">
+                <i data-lucide="map-pin"></i> Sun Institute Management And Technology, Shahjahanpur
+              </div>
+              <p class="timeline-desc">
+                Core foundation in Computer Science, algorithms, data structures, software engineering, web
+                technologies, and database management.
+              </p>
+            </div>
+
+            <!-- Schooling -->
+            <div class="timeline-card edu-card">
+              <div class="timeline-period-badge">01/2016 &bull; Higher Secondary</div>
+              <h4 class="timeline-role">12th Grade (Intermediate)</h4>
+              <div class="timeline-company">
+                <i data-lucide="map-pin"></i> A.R. Inter College, Shahbad, Hardoi
+              </div>
+            </div>
+
+            <div class="timeline-card edu-card">
+              <div class="timeline-period-badge">01/2014 &bull; High School</div>
+              <h4 class="timeline-role">10th Grade (Matriculation)</h4>
+              <div class="timeline-company">
+                <i data-lucide="map-pin"></i> A.R. Inter College, Shahbad, Hardoi
+              </div>
+            </div>
+
+            <!-- Languages & Location Card -->
+            <div class="quick-facts-box">
+              <div class="fact-item">
+                <i data-lucide="languages"></i>
+                <div>
+                  <strong>Languages:</strong> Hindi (Native), English (Proficient)
+                </div>
+              </div>
+              <div class="fact-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <strong>Location:</strong> Noida, Uttar Pradesh, India
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION (CTA) BANNER - JOB EXPLORATION FOCUS -->
+    <section class="cta-banner-section" id="contact">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <div class="hiring-status-pill">
+              <span class="pulse-dot-green"></span> Actively Exploring Full-Time Developer Roles
+            </div>
+            <h2 class="cta-title">Looking for a Dedicated Full-Stack Developer?</h2>
+            <p class="cta-subtitle">
+              I bring <strong>4+ years of production experience</strong> in Next.js, React.js, Python (Django), and
+              scalable REST APIs. Ready to join your engineering team immediately and deliver high-impact digital
+              products.
+            </p>
+            <div class="cta-buttons">
+              <button class="btn btn-cta-light" id="openContactModalBtn">
+                Hire Me / Start a Conversation <i data-lucide="arrow-right"></i>
+              </button>
+              <a href="mailto:avantika12294@gmail.com" class="btn btn-cta-outline">
+                <i data-lucide="mail"></i> Email Directly
+              </a>
+            </div>
+
+            <!-- Quick Direct Contact Details Inside CTA -->
+            <div class="cta-direct-info">
+              <button class="copy-pill-btn" onclick="copyText('avantika12294@gmail.com', 'Email copied!')"
+                title="Click to copy email">
+                <i data-lucide="copy"></i> avantika12294@gmail.com
+              </button>
+              <button class="copy-pill-btn" onclick="copyText('+917905399232', 'Phone number copied!')"
+                title="Click to copy phone">
+                <i data-lucide="phone"></i> +91-7905399232
+              </button>
+              <span class="location-badge">
+                <i data-lucide="map-pin"></i> Noida, India (Open to Remote / Relocation)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (Tailored for Full-Stack Developer Job Exploration) -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Footer Brand & Job Status -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-badge">AS</div>
+            <span class="logo-name">Avantika Singh</span>
+          </div>
+          <div class="footer-job-badge">
+            <span class="pulse-dot-green"></span> Available for Immediate Joining
+          </div>
+          <p class="footer-bio">
+            Full-Stack Developer with 4+ years of proven expertise in React.js, Next.js, and Python (Django). Actively
+            exploring Full-Time &amp; Remote Software Engineering roles to build scalable web platforms.
+          </p>
+        </div>
+
+        <!-- Footer Roles & Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Role Focus &amp; Links</h4>
+          <ul class="footer-nav">
+            <li><a href="#skills">Full-Stack Development</a></li>
+            <li><a href="#skills">Frontend Engineering (React / Next)</a></li>
+            <li><a href="#skills">Backend &amp; REST APIs (Django)</a></li>
+            <li><a href="#experience">Professional Experience (4+ Yrs)</a></li>
+            <li><a href="#projects">Key Delivered Projects</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Connect & Direct Hire -->
+        <div class="footer-connect-col">
+          <h4 class="footer-col-title">Get In Touch / Hire Me</h4>
+          <div class="footer-social-icons">
+            <a href="https://linkedin.com/in/avantika-singh-b9a93318b" target="_blank" rel="noopener noreferrer"
+              class="footer-social-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="mailto:avantika12294@gmail.com" class="footer-social-btn" title="Email Avantika"
+              aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+            <a href="tel:+917905399232" class="footer-social-btn" title="Call Avantika" aria-label="Phone">
+              <i data-lucide="phone"></i>
+            </a>
+          </div>
+          <div class="footer-contact-details">
+            <p><strong>Email:</strong> avantika12294@gmail.com</p>
+            <p><strong>Phone:</strong> +91-7905399232</p>
+            <p><strong>Location:</strong> Noida, India</p>
+            <p><strong>Preference:</strong> Full-Time / Remote / Hybrid</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Avantika Singh. Open for Full-Stack Developer Opportunities.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CONTACT MODAL / DIALOG -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-header">
+        <div class="badge-pill">Let's Connect</div>
+        <h3 class="modal-title">Start a Conversation</h3>
+        <p class="modal-subtitle">Leave a message or reach out directly to discuss your next project or role.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/avantika12294@gmail.com" method="POST">
+        <!-- FormSubmit Configurations -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_subject" value="New Portfolio Inquiry for Avantika Singh" />
+
+        <div class="form-group">
+          <label for="userName">Your Name</label>
+          <input type="text" id="userName" name="name" required placeholder="e.g. Avantika" />
+        </div>
+
+        <div class="form-group">
+          <label for="userEmail">Your Email</label>
+          <input type="email" id="userEmail" name="email" required placeholder="name@company.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="projectType">Project Interest</label>
+          <select id="projectType" name="type">
+            <option value="Full-Time Role">Full-Time / Remote Role</option>
+            <option value="Short-Term Project">Short-Term Collaboration / MVP</option>
+            <option value="Consulting">Technical Consulting</option>
+            <option value="Other">General Inquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="userMessage">Message / Project Details</label>
+          <textarea id="userMessage" name="message" rows="4" required
+            placeholder="Tell me about your project scope, requirements, or opportunity..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+          Send Message <i data-lucide="send"></i>
+        </button>
+      </form>
+
+      <div class="modal-quick-reach">
+        <span>Or reach directly via:</span>
+        <div class="reach-buttons">
+          <a href="mailto:avantika12294@gmail.com" class="reach-chip">
+            <i data-lucide="mail"></i> avantika12294@gmail.com
+          </a>
+          <a href="tel:+917905399232" class="reach-chip">
+            <i data-lucide="phone"></i> +91-7905399232
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <i data-lucide="check-circle" id="toastIcon"></i>
+    <span id="toastMsg">Message sent successfully!</span>
+  </div>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
